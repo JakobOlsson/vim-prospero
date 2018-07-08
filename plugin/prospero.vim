@@ -86,8 +86,8 @@ map Y y$
 " buffer
 set hidden
 " prev/next buffer shortcut
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
+nnoremap <Leader>n :bnext<CR>
+nnoremap <Leader>p :bprev<CR>
 " Exit to normal mode with ESC ESC, when in terminal :term
 tnoremap <ESC><ESC> <C-\><C-N>
 

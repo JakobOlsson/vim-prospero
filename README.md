@@ -45,34 +45,34 @@ VIM - Resources, links, and extensions
 ### Plugins
 [vim-airline](https://github.com/vim-airline/vim-airline) - Lean & mean status/tabline for vim that's light as air.
 
-![vim-airline gif](https://github.com/JakobOlsson/vim/raw/master/img/vim-airline.gif)
+![vim-airline gif](https://github.com/JakobOlsson/vim-prospero/raw/master/img/vim-airline.gif)
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive) - Probably best Git wrapper - `:Gstatus` - `-` to add/reset a files changes, `:Gcommit`, `:Gblame`, `:Gread` - reload file, `:Gwrite` is like git add, `:Gsplit`, `:Gvsplit`
 [vim-buftabline](https://github.com/ap/vim-buftabline) - Replace tabline with bufferlist
 
 [vim-bufferline](https://github.com/bling/vim-bufferline) - List of buffers in the command bar || statusline
 
-![bufferline statusline](https://github.com/JakobOlsson/vim/raw/master/img/bufferline-status.png)
+![bufferline statusline](https://github.com/JakobOlsson/vim-prospero/raw/master/img/bufferline-status.png)
 
 [vim-sensible](https://github.com/tpope/vim-sensible) - A good sensible start for your vimrc
 
 [comfortable-motion](https://github.com/yuttie/comfortable-motion.vim) - Smooth scrolling in vim
 
-![comfortable-motion gif](https://github.com/JakobOlsson/vim/raw/master/img/comfortable-motion.gif)
+![comfortable-motion gif](https://github.com/JakobOlsson/vim-prospero/raw/master/img/comfortable-motion.gif)
 
 [vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Handle python virtualenv, mostly use it to show current virtualenv in statusline
 
 [nerdtree](https://github.com/scrooloose/nerdtree) - Filebrowser for vim
 
-![nedtree](https://github.com/JakobOlsson/vim/raw/master/img/nedtree.png)
+![nedtree](https://github.com/JakobOlsson/vim-prospero/raw/master/img/nedtree.png)
 
 [command-t](https://github.com/wincent/command-t) - Command line style filebrowser for vim
 
-![command-t gif](https://github.com/JakobOlsson/vim/raw/master/img/command-t.gif)
+![command-t gif](https://github.com/JakobOlsson/vim-prospero/raw/master/img/command-t.gif)
 
 [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - Sublime Texts multiple selection done in vim - just stand on a word and hit `<C-n>` and then `c` and see the magic
 
-![vim-multiple-cursors](https://github.com/JakobOlsson/vim/raw/master/img/vim-multiple-cursors.gif)
+![vim-multiple-cursors](https://github.com/JakobOlsson/vim-prospero/raw/master/img/vim-multiple-cursors.gif)
 
 
 ---
