@@ -79,6 +79,8 @@ set foldmethod=indent   " fold based on indent level
 "since I spend my days in Python. Other acceptable values are marker, manual,
 "expr, syntax, diff. Run :help foldmethod to find out what each of those do.
 "
+" detect filetypes, load plugins and use specific filetype indent
+filetype plugin indent on
 
 " MISC KEYMAPPS
 " make Y yank from cursor to EOL
