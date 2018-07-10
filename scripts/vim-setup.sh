@@ -37,11 +37,11 @@ cd ~/.vim/bundle && \
   git clone https://github.com/terryma/vim-multiple-cursors.git 
 
 # nerdtree - filebrowser for vim
-cd ~/.vim/bundle && \
-  git clone https://github.com/scrooloose/nerdtree.git
+#cd ~/.vim/bundle && \
+#  git clone https://github.com/scrooloose/nerdtree.git
 # remapp nerdtree key
-echo "\"NERDTree Tab open/toggle" >> ~/.vimrc
-echo "nnoremap <Leader>e :NERDTreeToggle<CR>" >> ~/.vimrc
+#echo "\"NERDTree Tab open/toggle" >> ~/.vimrc
+#echo "nnoremap <Leader>e :NERDTreeToggle<CR>" >> ~/.vimrc
 
 
 # color schemas / themes
