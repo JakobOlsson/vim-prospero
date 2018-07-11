@@ -26,5 +26,5 @@ echo "set -x EDITOR /usr/bin/vimx" >> ~/.config/fish/config.fish
 echo "set -x PAGER /usr/bin/less" >> ~/.config/fish/config.fish
 # setup for source highlight in less
 echo "set -x LESSOPEN \"| /usr/bin/highlight %s --out-format xterm256 --line-numbers --quiet --force --style molokai\"" >> ~/.config/fish/config.fish
-echo "set -x LESSOPEN ' -R '" >> ~/.config/fish/config.fish
+echo "set -x LESS ' -R '" >> ~/.config/fish/config.fish
 echo "alias more=\"less\"" >> ~/.config/fish/config.fish 
