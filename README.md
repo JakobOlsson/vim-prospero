@@ -41,6 +41,29 @@ VIM - Resources, links, and extensions
 * Insert yanked text in _command-line_ - `<c-r>"` _think: Cmd register, last copied text_
 * Command history - `:his<cr>`
 * Browse command history - `q:` - browse with jk keys, execute with enter
+* Quote/Single Quote a word `cw'<c-r>"'` - change word, insert ', past last yanked/delete, insert ', for marked text, just use `c` instead of `cw`, for a letter use `s`. There is also a plugin that handles more like, replace, etc, vim-surround
+```
+    Quote a word, using single quotes
+    ciw'Ctrl+r"'
+        ciw - Delete the word the cursor is on, and end up in insert mode.
+        ' - add the first quote.
+        Ctrl+r" - Insert the contents of the " register, aka the last yank/delete.
+        ' - add the closing quote.
+
+    Unquote a word that's enclosed in single quotes
+    di'hPl2x
+        di' - Delete the word enclosed by single quotes.
+        hP - Move the cursor left one place (on top of the opening quote) and put the just deleted text before the quote.
+        l - Move the cursor right one place (on top of the opening quote).
+        2x - Delete the two quotes.
+
+    Change single quotes to double quotes
+    va':s/\%V'\%V/"/g
+        va' - Visually select the quoted word and the quotes.
+        :s/ - Start a replacement.
+        \%V'\%V - Only match single quotes that are within the visually selected region.
+        /"/g - Replace them all with double quotes.
+```
 ---
 ### Plugins
 [vim-airline](https://github.com/vim-airline/vim-airline) - Lean & mean status/tabline for vim that's light as air.
@@ -74,6 +97,9 @@ VIM - Resources, links, and extensions
 
 ![vim-multiple-cursors](https://github.com/JakobOlsson/vim-prospero/raw/master/img/vim-multiple-cursors.gif)
 
+[ALE](https://github.com/w0rp/ale) - ALE (Asynchronous Lint Engine) is a plugin for providing linting in NeoVim 0.2.0+ and Vim 8 while you edit your text files.
+
+[vim-surround](https://github.com/tpope/vim-surround) - A plugin with more powerfull way to quote text
 
 ---
 
