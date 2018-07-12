@@ -41,6 +41,7 @@ VIM - Resources, links, and extensions
 * Insert yanked text in _command-line_ - `<c-r>"` _think: Cmd register, last copied text_
 * Command history - `:his<cr>`
 * Browse command history - `q:` - browse with jk keys, execute with enter
+* Diff current changed buffer with the one on disk `:w !diff % -` 
 * Quote/Single Quote a word `cw'<c-r>"'` - change word, insert ', past last yanked/delete, insert ', for marked text, just use `c` instead of `cw`, for a letter use `s`. There is also a plugin that handles more like, replace, etc, vim-surround
 ```
     Quote a word, using single quotes
