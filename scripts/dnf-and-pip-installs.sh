@@ -28,3 +28,9 @@ echo "set -x PAGER /usr/bin/less" >> ~/.config/fish/config.fish
 echo "set -x LESSOPEN \"| /usr/bin/highlight %s --out-format xterm256 --line-numbers --quiet --force --style molokai\"" >> ~/.config/fish/config.fish
 echo "set -x LESS ' -R '" >> ~/.config/fish/config.fish
 echo "alias more=\"less\"" >> ~/.config/fish/config.fish 
+
+# powerline
+# dnf -y install powerline powerline-fonts
+# echo "set fish_function_path $fish_function_path \"/usr/share/powerline/fish\"" >> ~/.config/fish/config.fish
+# powerline-setup >> ~/.config/fish/config.fish 
+
