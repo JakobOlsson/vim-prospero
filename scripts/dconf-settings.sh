@@ -12,5 +12,8 @@ dconf write /com/gexperts/Tilix/terminal-title-style "'none'"
 dconf write /com/gexperts/Tilix/theme-variant "'dark'"
 
 # gnome shell/mutter keybindings
+# remove Super+H for minimizing
+dconf write org.gnome.desktop.wm.keybindings minimize "[]"
+# switch desktop up and down
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-up "['<Super>Page_Up', '<Control><Alt>Up', '<Super>k']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-down "['<Super>Page_Down', '<Control><Alt>Down', '<Super>j']"

@@ -10,6 +10,8 @@ dnf -y install tilix
 dnf -y install nnn
 # source highlighting helper - to get source highlight in less
 dnf -y install highlight
+# powerline shell statusline
+dnf -y install powerline powerline-fonts
 
 # aws development
 pip install --user --upgrade pip 
@@ -28,3 +30,13 @@ echo "set -x PAGER /usr/bin/less" >> ~/.config/fish/config.fish
 echo "set -x LESSOPEN \"| /usr/bin/highlight %s --out-format xterm256 --line-numbers --quiet --force --style molokai\"" >> ~/.config/fish/config.fish
 echo "set -x LESS ' -R '" >> ~/.config/fish/config.fish
 echo "alias more=\"less\"" >> ~/.config/fish/config.fish 
+cat <<'EOF' >> ~/.config/fish/config.fish
+  # enable fish with vi keybindings - Escape to enter command mode
+  fish_hybrid_key_bindings
+EOF
+cat <<'EOF' >> ~/.config/fish/config.fish
+  # Enable powerline with daemon
+  set -x fish_function_path $fish_function_path "/usr/share/powerline/fish"
+  powerline-daemon -q
+  powerline-setup
+EOF 
