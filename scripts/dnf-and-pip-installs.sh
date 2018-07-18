@@ -30,6 +30,7 @@ echo "set -x PAGER /usr/bin/less" >> ~/.config/fish/config.fish
 echo "set -x LESSOPEN \"| /usr/bin/highlight %s --out-format xterm256 --line-numbers --quiet --force --style molokai\"" >> ~/.config/fish/config.fish
 echo "set -x LESS ' -R '" >> ~/.config/fish/config.fish
 echo "alias more=\"less\"" >> ~/.config/fish/config.fish 
+<<<<<<< HEAD
 cat <<'EOF' >> ~/.config/fish/config.fish
   # enable fish with vi keybindings - Escape to enter command mode
   fish_hybrid_key_bindings
@@ -40,3 +41,4 @@ cat <<'EOF' >> ~/.config/fish/config.fish
   powerline-daemon -q
   powerline-setup
 EOF 
+
