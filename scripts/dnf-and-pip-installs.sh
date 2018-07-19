@@ -14,6 +14,8 @@ sudo dnf -y install nnn
 sudo dnf -y install highlight
 # powerline shell statusline
 sudo dnf -y install powerline powerline-fonts
+# dash-to-dock gnome extension
+sudo dnf -y install gnome-shell-extension-dash-to-dock
 
 # aws development
 pip install --user --upgrade pip 
