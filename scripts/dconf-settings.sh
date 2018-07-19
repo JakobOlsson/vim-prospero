@@ -15,7 +15,7 @@ dconf write /com/gexperts/Tilix/theme-variant "'dark'"
 # remove Super+H for minimizing
 dconf write /org/gnome/desktop/wm/keybindings/minimize "['']"
 # change lockscreen shortcut
-dconf write /org/gnome/settings-daemon/plugins/media-keys/screensaver "['<Super>q']"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/screensaver "'<Super>q'"
 # if you have "dash to dock" extension instlled -
 # remove mapping that is default to Super+q, which we use above
 dconf write /org/gnome/shell/extensions/dash-to-dock/shortcut-text "''"
