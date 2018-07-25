@@ -10,6 +10,8 @@ sudo dnf -y install tilix
 sudo dnf -y install tmux
 # nnn - command line file browser URL: https://github.com/jarun/nnn
 sudo dnf -y install nnn
+# install xsel for xclipboard tool
+sudo dnf -y install xsel
 # source highlighting helper - to get source highlight in less
 sudo dnf -y install highlight
 # powerline shell statusline
@@ -96,4 +98,7 @@ cat <<'EOF' >> ~/.tmux.conf
   bind-key -n C-k if-shell "$is_vim" "send-keys C-k"  "select-pane -U"
   bind-key -n C-l if-shell "$is_vim" "send-keys C-l"  "select-pane -R"
   bind-key -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
+
+  # copy to xclipboard
+  bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
 EOF
