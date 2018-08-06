@@ -1,5 +1,6 @@
 # vim with clipboard support
 sudo dnf -y install vim-enhanced
+sudo dnf -y install vim-X11
 # nice vim plugin for search/brows/open files <Leader>t
 sudo dnf -y install vim-command-t
 # fish - a nice shell
@@ -26,6 +27,7 @@ pip install --user boto3
 
 echo "alias vim=\"vimx\"" >> ~/.bashrc
 echo "alias vi=\"vimx\"" >> ~/.bashrc
+mkdir -p  ~/.config/fish/
 cat <<'EOF' >> ~/.config/fish/config.fish
   # use VIM Extended/Enhanced
   alias vim="vimx"
@@ -52,6 +54,7 @@ EOF
 
 echo "creating tmux.conf"
 # install default .tmux.conf
+touch ~/.tmux.conf
 cat <<'EOF' >> ~/.tmux.conf
   # Default prefix key for keybindings is C-b
   # Change it to C-a by uncommenting following
