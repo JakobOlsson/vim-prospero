@@ -20,10 +20,6 @@ sudo dnf -y install powerline powerline-fonts
 # dash-to-dock gnome extension
 sudo dnf -y install gnome-shell-extension-dash-to-dock
 
-# aws development
-pip install --user --upgrade pip 
-pip install --user awscli
-pip install --user boto3
 
 echo "alias vim=\"vimx\"" >> ~/.bashrc
 echo "alias vi=\"vimx\"" >> ~/.bashrc
