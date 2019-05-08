@@ -16,16 +16,15 @@ cat <<'EOF' >> ~/.config/nvim/init.vim
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'bling/vim-airline'
   Plug 'tpope/vim-fugitive'
+  Plug 'morhetz/gruvbox'
   " Initialize plugin system
   call plug#end()
   filetype plugin indent on
-  "CHANGE LEADER KEY FROM DEFAUKT \ backslash
-  " prospero.vim - defaults and keymappings prospero likes
-  " Maintainer: Wizard Prospero
-  " Version: 0.0.1
-  
-  "CHANGE LEADER KEY FROM DEFAUKT \ backslash
+  colorscheme gruvbox
+  " CHANGE LEADER KEY FROM DEFAUKT \ backslash
   let mapleader="," 
+  " true colors
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   
   " TABS
   " se :help tapstop
