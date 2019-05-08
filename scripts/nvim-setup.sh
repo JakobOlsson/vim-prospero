@@ -14,9 +14,13 @@ cat <<'EOF' >> ~/.config/nvim/init.vim
   call plug#begin('~/.local/share/nvim/plugged')
   " plugins go here
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-fugitive'
   Plug 'morhetz/gruvbox'
+   " syntax check
+  Plug 'w0rp/ale'
   " Initialize plugin system
   call plug#end()
   filetype plugin indent on
@@ -25,6 +29,7 @@ cat <<'EOF' >> ~/.config/nvim/init.vim
   let mapleader="," 
   " true colors
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  set termguicolors
   
   " TABS
   " se :help tapstop
