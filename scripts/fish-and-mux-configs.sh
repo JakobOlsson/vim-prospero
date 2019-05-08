@@ -38,7 +38,7 @@ cat <<'EOF' >> ~/.tmux.conf
   #unbind C-b
   # set default terminal and enable true colors terminal
   set -g default-terminal "tmux-256color"
-  set-option -ga terminal-ovverides " ,xterm-256color:Tc" 
+  set-option -ga terminal-overrides " ,xterm-256color:Tc" 
 
   # set default shell
   set-option -g default-shell /usr/bin/fish
