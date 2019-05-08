@@ -1,5 +1,7 @@
 #!/bin/env sh
 
+# installing neovim
+sudo dnf install -y neovim
 #echo "alias vim=\"nvim\"" >> ~/.bashrc
 #echo "alias vi=\"nvim\"" >> ~/.bashrc
 mkdir -p  ~/.config/nvim/
