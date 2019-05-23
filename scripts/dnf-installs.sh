@@ -4,6 +4,8 @@ sudo dnf -y install vim-enhanced
 sudo dnf -y install vim-X11
 # nice vim plugin for search/brows/open files <Leader>t
 sudo dnf -y install vim-command-t
+# install neovim
+sudo dnf -y install neovim
 # fish - a nice shell
 sudo dnf -y install fish
 # tiled terminal emulator for gnome

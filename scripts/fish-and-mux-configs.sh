@@ -3,12 +3,12 @@ echo "creating config.fish"
 mkdir -p  ~/.config/fish/
 cat <<'EOF' >> ~/.config/fish/config.fish
   # use VIM Extended/Enhanced
-  alias vim="vimx"
-  alias vi="vimx"
+  alias vim="nvim"
+  alias vi="nvim"
 
   # SET GLOBAL ENV VARIABLES
   set -x SHELL /usr/bin/fish 
-  set -x EDITOR /usr/bin/vimx
+  set -x EDITOR /usr/bin/nvim
   set -x PAGER /usr/bin/less 
 
   # SETUP FOR SYNTAX HIGHLIGHT IN LESS
