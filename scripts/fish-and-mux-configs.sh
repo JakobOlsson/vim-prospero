@@ -1,6 +1,5 @@
 #!/bin/env sh
-echo "alias vim=\"vimx\"" >> ~/.bashrc
-echo "alias vi=\"vimx\"" >> ~/.bashrc
+echo "creating config.fish"
 mkdir -p  ~/.config/fish/
 cat <<'EOF' >> ~/.config/fish/config.fish
   # use VIM Extended/Enhanced
