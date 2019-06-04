@@ -2,7 +2,10 @@
 
 # will install docker-ce version which is never than then one in fedora repo
 # then add current user to docker group
-
+if [[ $EUID -ne 0 ]]; then
+  echo "You have to be root"
+  exit 1
+fi
 sudo dnf -y install dnf-plugins-core
 sudo cat >/etc/yum.repos.d/docker-ce.repo<<EOF
 [docker-ce-stable]
@@ -13,7 +16,7 @@ gpgcheck=1
 gpgkey=https://download.docker.com/linux/fedora/gpg
 EOF
 
-sudo dnf install -y docker
+sudo dnf install -y docker-ce docker-ce-cli containerd.io
 DOCKERGROUP="sudo usermod -a -G docker ${USER}"
 eval $DOCKERGROUP
 

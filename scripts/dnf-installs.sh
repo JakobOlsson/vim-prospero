@@ -22,3 +22,7 @@ sudo dnf -y install highlight
 sudo dnf -y install powerline powerline-fonts
 # dash-to-dock gnome extension
 sudo dnf -y install gnome-shell-extension-dash-to-dock
+# smart card support (gpg smartcard)
+sudo dnf -y install pcsc-tools pcsc-lite
+sudo systemctl enable pcscd
+sudo systemctl start pcscd
