@@ -21,6 +21,8 @@ cat <<'EOF' >> ~/.config/nvim/init.vim
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-fugitive'
   Plug 'morhetz/gruvbox'
+  # transperently edit gpg encrypted files
+  Plug 'jamessan/vim-gnupg'
    " syntax check
   Plug 'w0rp/ale'
   " Initialize plugin system
