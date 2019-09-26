@@ -25,6 +25,12 @@ cat <<'EOF' >> ~/.config/fish/config.fish
   powerline-setup
 EOF
 
+echo "installing fish gruvbox theme"
+mkdir -p ~/.config/fish/functions
+cd ~/.config/fish/functions
+curl -O https://raw.githubusercontent.com/Jomik/fish-gruvbox/master/functions/theme_gruvbox.fish
+echo "theme_gruvbox dark" >> ~/.config/fish/config.fish
+
 echo "creating tmux.conf"
 # install default .tmux.conf
 touch ~/.tmux.conf

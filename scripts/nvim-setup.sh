@@ -20,6 +20,7 @@ cat <<'EOF' >> ~/.config/nvim/init.vim
   Plug 'vim-airline/vim-airline-themes'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
   Plug 'morhetz/gruvbox'
   " transperently edit gpg encrypted files
   Plug 'jamessan/vim-gnupg'
