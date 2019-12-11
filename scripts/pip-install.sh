@@ -5,7 +5,7 @@
 # check that we have the right version of pip3
 PIP_VERSION=$(pip3 --version | awk '{print $2}')
 echo "Pip version is ${PIP_VERSION}"
-if [ $PIP_VERSION == "19.0.2" ]; then
+if [[ $PIP_VERSION == "19."* ]]; then
   # aws development
   echo aws tools
   #pip3 install --user --upgrade pip3 

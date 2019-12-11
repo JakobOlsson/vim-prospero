@@ -26,3 +26,5 @@ sudo dnf -y install gnome-shell-extension-dash-to-dock
 sudo dnf -y install pcsc-tools pcsc-lite
 sudo systemctl enable pcscd
 sudo systemctl start pcscd
+# install gnu password manager
+sudo dnf -y install pass qrencode xclip
