@@ -30,3 +30,16 @@ sudo docker run hello-world
 echo "For SELinux and Docker volumes to work outside /var/.."
 echo "Remeber to run: chcon -Rt svirt_sandbox_file_t /home/${USER}/whateverfolder"
 echo "On any folder in your home directy you will be running docker inside and will mount volumes localy"
+
+echo "* Since Fedora 31 - to make the docker daemon, some kernel options have to be set"
+fedora=$(cat /etc/fedora-release)
+echo $fedora
+
+if [[ "${fedora}" == *"31"* ]]; then
+  echo "* Updating kernel option"
+  sudo grubby --update-kernel=ALL \
+    --args="systemd.unified_cgroup_hierarchy=0"
+  echo "* Updating docker service daemon start options"
+  Exec="ExecStart=/usr/bin/dockerd-current -H fd:// --exec-opt native.groupdriver=systemd "
+  sudo sed -i "s#ExecStart.*#$Exec\\\#g" /lib/systemd/system/docker.service
+fi
