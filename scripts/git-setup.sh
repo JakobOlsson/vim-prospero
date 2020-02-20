@@ -2,6 +2,8 @@
 # set global user name
 git config --global user.name "Jakob Olsson"
 
+# git email
+git config --global user.email "32457895+JakobOlsson@users.noreply.github.com"
 # set aliases
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 git config --global alias.co checkout
