@@ -27,4 +27,6 @@ sudo dnf -y install pcsc-tools pcsc-lite
 sudo systemctl enable pcscd
 sudo systemctl start pcscd
 # install gnu password manager
-sudo dnf -y install pass qrencode xclip
+sudo dnf -y install pass qrencode xclip pass-otp loboath oathtool 
+# install zbar to decode qrcode images like for otp
+sudo dnf -y install zbar
