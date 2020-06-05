@@ -30,3 +30,7 @@ sudo systemctl start pcscd
 sudo dnf -y install pass qrencode xclip pass-otp loboath oathtool 
 # install zbar to decode qrcode images like for otp
 sudo dnf -y install zbar
+# ripgrep - a better grep
+sudo dnf -y install ripgrep
+# fuzzy file searcher fzf
+sudo dnf -y install fzf

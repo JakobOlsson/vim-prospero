@@ -2,6 +2,8 @@
 
 # installing neovim
 sudo dnf install -y neovim
+# install python neovim module, needed for denite
+sudo pip3 install pynvim
 #echo "alias vim=\"nvim\"" >> ~/.bashrc
 #echo "alias vi=\"nvim\"" >> ~/.bashrc
 mkdir -p  ~/.config/nvim/
