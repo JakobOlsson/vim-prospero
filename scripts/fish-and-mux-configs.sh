@@ -46,7 +46,7 @@ cat <<'EOF' >> ~/.tmux.conf
   set-option -ga terminal-overrides " ,xterm-256color:Tc" 
 
   # set default shell
-  set-option -g default-shell /usr/bin/fish
+  set-option -g default-shell /usr/bin/zsh
 
   # vi mode
   set -g mode-keys vi
@@ -82,7 +82,7 @@ cat <<'EOF' >> ~/.tmux.conf
   bind-key -n C-j if-shell "$is_vim" "send-keys C-j"  "select-pane -D"
   bind-key -n C-k if-shell "$is_vim" "send-keys C-k"  "select-pane -U"
   bind-key -n C-l if-shell "$is_vim" "send-keys C-l"  "select-pane -R"
-  bind-key -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
+  bind-key -n C-\\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
   # copy to xclipboard
   bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xsel -i --clipboard"
